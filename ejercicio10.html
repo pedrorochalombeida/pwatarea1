@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sitio_web.css">
+    <title>Nombre de la Empresa</title>
+</head>
+<body>
+    <header id="encabezado">
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#inicio">Inicio Sitio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#preguntas-frecuentes">Preguntas Frecuentes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="seccion-verde">
+        <!-- Contenido de la sección de Inicio -->
+    </section>
+    <section id="contacto" class="seccion-blanca">
+        <div class="contenedor">
+            <h2>Contacto</h2>
+            <p>¡Estamos aquí para ayudarte! Puedes ponerte en contacto con nosotros de la siguiente manera:</p>
+            <ul>
+                <li><strong>Dirección:</strong> Calle Ejemplo, 123, Ciudad, País</li>
+                <li><strong>Teléfono:</strong> +1 234 567 890</li>
+                <li><strong>Correo Electrónico:</strong> info@empresa.com</li>
+            </ul>
+            <p>Si tienes alguna pregunta o necesitas asistencia, no dudes en escribirnos o llamarnos. Estamos disponibles para ayudarte en cualquier momento.</p>
+    
+            <button id="mostrarFormulario" class="boton">Mostrar Formulario</button>
+    
+            <div id="formularioConsulta" style="display: none;">
+                <!-- Aquí coloca tu formulario de consulta -->
+                <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+    
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo">
+    
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+    
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="servicios" class="seccion-verde">
+        <div class="contenedor">
+            <h2>Servicios</h2>
+            <div class="servicio">
+                <h3>Servicio 1</h3>
+                <p>Descripción del Servicio 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus, ligula ut porta consectetur.</p>
+                <button class="boton-solicitar">Solicitar</button>
+            </div>
+            <div class="servicio">
+                <h3>Servicio 2</h3>
+                <p>Descripción del Servicio 2. Sed auctor, neque vel fringilla commodo, nunc libero tempus velit.</p>
+                <button class="boton-solicitar">Solicitar</button>
+            </div>
+            <div class="servicio">
+                <h3>Servicio 3</h3>
+                <p>Descripción del Servicio 3. Vestibulum nec risus sit amet ex aliquet tristique. Vivamus eget lacinia erat.</p>
+                <button class="boton-solicitar">Solicitar</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="noticias" class="seccion-blanca">
+        <div class="contenedor">
+            <h2>Noticias</h2>
+            <div class="noticia">
+                <h3>Noticia 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus, ligula ut porta consectetur, justo nisl vestibulum arcu.</p>
+                <a href="#">Leer más</a>
+            </div>
+            <div class="noticia">
+                <h3>Noticia 2</h3>
+                <p>Sed auctor, neque vel fringilla commodo, nunc libero tempus velit, ut ultrices nulla odio ut nunc.</p>
+                <a href="#">Leer más</a>
+            </div>
+            <div class="noticia">
+                <h3>Noticia 3</h3>
+                <p>Vestibulum nec risus sit amet ex aliquet tristique. Vivamus eget lacinia erat. Morbi euismod lectus at quam.</p>
+                <a href="#">Leer más</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="recursos" class="seccion-verde">
+        <div class="contenedor">
+            <h2>Recursos</h2>
+            <div class="recurso">
+                <h3>Guía de Inicio Rápido</h3>
+                <p>Descarga nuestra guía de inicio rápido para obtener consejos útiles y tutoriales sobre cómo comenzar.</p>
+                <a href="#">Descargar</a>
+            </div>
+            <div class="recurso">
+                <h3>Video Tutorial</h3>
+                <p>Explora nuestros video tutoriales en línea para obtener una guía visual sobre cómo utilizar nuestros servicios.</p>
+                <a href="#">Ver Videos</a>
+            </div>
+            <div class="recurso">
+                <h3>Blog de Consejos</h3>
+                <p>Lee nuestros consejos y trucos en el blog para maximizar tus resultados con nuestros productos y servicios.</p>
+                <a href="#">Visitar el Blog</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="preguntas-frecuentes" class="seccion-blanca">
+        <div class="contenedor">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="pregunta-frecuente">
+                <h3>¿Cómo puedo crear una cuenta?</h3>
+                <p>Para crear una cuenta, ve a la página de registro y completa el formulario con tus datos personales. Luego, haz clic en el botón "Registrarse" y sigue las instrucciones.</p>
+            </div>
+            <div class="pregunta-frecuente">
+                <h3>¿Cómo restablezco mi contraseña?</h3>
+                <p>Si olvidaste tu contraseña, ve a la página de inicio de sesión y haz clic en "¿Olvidaste tu contraseña?". Ingresa tu dirección de correo electrónico y sigue las instrucciones para restablecer tu contraseña.</p>
+            </div>
+            <div class="pregunta-frecuente">
+                <h3>¿Cuáles son las opciones de pago disponibles?</h3>
+                <p>Aceptamos tarjetas de crédito principales y PayPal como opciones de pago. Puedes seleccionar tu método de pago preferido durante el proceso de compra.</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="pie-de-pagina" class="seccion-negra">
+        <div class="contenedor">
+            <p>&copy; 2023 PEDRO ROCHA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scroll.js"></script>
+</body>
+</html>
+

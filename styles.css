@@ -1,0 +1,241 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el menú */
+#menu {
+    position: fixed;
+    left: -250px; /* Inicialmente oculto fuera de la pantalla */
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #28a745; /* Verde claro para el fondo del menú */
+    padding-top: 20px;
+    text-align: center;
+    overflow-y: auto;
+    z-index: 1;
+    transition: left 0.3s ease; /* Agregamos una transición para animar el desplazamiento del menú */
+}
+
+#menu.open {
+    left: 0; /* Mostrar el menú moviéndolo a la posición 0 */
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu ul li {
+    margin-bottom: 10px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+#menu ul li a:hover {
+    background-color: #218838; /* Color de fondo al pasar el ratón, un tono más oscuro de verde */
+}
+
+/* Estilos para el botón de menú */
+.menu-btn {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 2;
+    display: block;
+    background-color: #28a745; /* Color verde claro para el botón */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-btn:hover {
+    background-color: #218838; /* Cambia el color del botón al pasar el ratón */
+}
+
+/* Estilos para el contenido */
+.contenido {
+    margin-left: 260px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2; /* Color de fondo para las celdas de encabezado */
+}
+/* Estilos para el formulario de consulta */
+#formularioConsulta form {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#formularioConsulta form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#formularioConsulta form input[type="text"],
+#formularioConsulta form input[type="email"],
+#formularioConsulta form input[type="number"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#formularioConsulta form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#formularioConsulta form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+/* Estilos para el contenido */
+.contenido {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos cambiados por JavaScript */
+.cambiado {
+    background-color: #ffcc00; /* Fondo amarillo */
+    color: #333; /* Texto negro */
+    font-size: 24px; /* Tamaño de fuente más grande */
+}
+/* Estilos para el contenido */
+.contenido2 {
+    text-align: center;
+}
+
+/* Estilos para la caja */
+.caja {
+    width: 300px;
+    height: 200px;
+    border: 2px solid #007bff; /* Borde azul */
+    background-color: #f0f0f0; /* Fondo gris claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Estilos para la barra de navegación */
+#menu ul {
+    list-style: none;
+    padding: 0;
+    background-color: #007bff; /* Fondo azul para la barra de navegación */
+}
+
+#menu ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #fff; /* Texto blanco para los enlaces de navegación */
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Agregamos una transición para cambiar el color al pasar el ratón */
+}
+
+#menu ul li a:hover {
+    color: #ff9900; /* Color de texto al pasar el ratón, un tono de naranja */
+}
+@media screen and (max-width: 768px) {
+    #menu ul {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .contenido {
+        padding-top: 60px;
+    }
+
+    #menu ul.open {
+        display: block;
+    }
+}
+
+/* Estilos para las imágenes de la galería */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galeria img {
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* Estilos para la ventana emergente */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: 10% auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+
+
